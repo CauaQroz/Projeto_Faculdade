@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="/images/abeia.ico" />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h3></h3>
+    <div class="container">
+      <div class="hex">
+        <div class="form">
+          <h1>Cadastrar</h1>
+          <div class="label-float">
+            <input type="text" id="nome" required />
+            <label id="labelNome">Nome</label>
+          </div>
+          <div class="label-float">
+            <input type="text" id="usuario" required />
+            <label id="labelUsuario">CNPJ</label>
+          </div>
+          <div class="label-float">
+            <input type="password" id="senha" required />
+            <label id="labelSenha">Senha</label>
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+          <div class="label-float">
+            <input type="password" id="confirmSenha" required />
+            <label id="labelConfirmSenha">Confirmar Senha</label>
+            <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+          <button onclick="cadastrar()">Cadastrar</button>
+          <p>Já tem uma conta?</p>
+          <a href="/html/signin.html">Entrar</a>
+        </div>
+      </div>
+    </div>
+    <script src="/js/signup.js"></script>
+  </body>
+</html>

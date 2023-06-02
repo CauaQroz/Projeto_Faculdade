@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="../images/abeia.ico" />
+    <link rel="stylesheet" href="../css/signin.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <h3></h3>
+    <div class="container">
+      <div class="hex">
+        <div class="form">
+          <h1>Entrar</h1>
+          <div class="label-float">
+            <input type="text" id="user" required />
+            <label id="userLabel">CNPJ</label>
+          </div>
+          <div class="label-float">
+            <input type="password" id="senha" required />
+            <label id="senhaLabel">Senha</label>
+            <i class="fa fa-eye"></i>
+          </div>
+          <button onclick="entrar()">Entrar</button>
+          <p>Não tem uma conta?</p>
+          <a href="../html/signup.html">Cadastre-se</a>
+        </div>
+      </div>
+    </div>
+    <script src="../js/signin.js"></script>
+  </body>
+</html>

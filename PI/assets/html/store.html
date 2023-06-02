@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="../images/abeia.ico">
+    <link rel="stylesheet" href="../css/store.css"/>
+    <title>Store</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo">BeeHive</h1>
+    <nav>
+      <button onclick="window.location.href = './home.html'">
+        Inicio
+      </button>
+      <button onclick="window.location.href = './assets/html/contact.html'">Sobre</button>
+      <button onclick="window.location.href = './store.html'">Menu</button>
+      <button onclick="window.location.href = './contact.html'">
+        Contato
+      </button>
+    </nav>
+    <button class="advertise" type="submit" onclick="window.location.href = './assets/html/insertstore.html'">
+      Anunciar Loja
+    </button>
+  </header>
+      <div class="grid">
+        <div class="banner">
+          <img src="https://img.freepik.com/fotos-gratis/hamburguer-de-carne-grelhada-em-chama-de-mesa-de-madeira-grelhada-gerada-por-ia_188544-25122.jpg?size=626&ext=jpg&ga=GA1.1.2074011023.1685212737&semt=sph" alt="banner"></img>
+        </div>
+        <div class="description">
+          <p>Nome da loja</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor ma
+          ssa. Pellentesque habitant morbi tristique senectus et netus et malesuada f
+          ames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagi
+          ttis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing</p>
+        </div>
+        <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d29225.640243379155!2d-46.5174528!3d-23.7043712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spt-BR!2sbr!4v1685137429328!5m2!1spt-BR!2sbr" width="500" height="200" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="icons">
+          <div class="socialMedia">
+            <ul class="box">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="blank"
+                  class="instagram"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.whatsapp.com/?lang=pt_br"
+                  class="whatsapp"
+                  target="blank"
+                >
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:beehive@gmail.com"
+                  class="envelope"
+                  target="blank"
+                >
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/"
+                  class="youtube"
+                  target="blank"
+                >
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+      <script src="../js/social.js"></script>
+    <script>
+      let list = document.querySelectorAll(".box li");
+      VanillaTilt.init(document.querySelectorAll(".box li a"), {
+        max: 30,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+body {
+  margin: 0;
+  background-color: #000;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  background-color: #ffc000;
+  z-index: 1;
+}
+.logo {
+  font-family: smooch;
+  font-size: 2em;
+  color: black;
+}
+header nav button {
+  background-color: transparent;
+  border: 0;
+  font-family: "Poppins", "sans-serif";
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition-delay: 0s;
+  transition-duration: 1s;
+}
+header nav button:hover {
+  color: #333;
+  transform: translate(0px, -3px);
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+}
+.advertise {
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Poppins", "sans-serif";
+  cursor: pointer;
+  transition: 0.5s;
+}
+button {
+  font-family: "Poppins", "sans-serif";
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease-out;
+}
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10%;
+}
+.banner img {
+  max-width: 500px;
+}
+p {
+  font-family: "Poppins", "sans-serif";
+  color: white;
+}
+/*Box*/
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box li {
+  list-style-type: none;
+}
+
+.box li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transform-style: preserve-3d;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  border-radius: 8px;
+  margin: 20px;
+  color: #000;
+  box-shadow: 0 25px 35px rgb(0, 0, 0);
+  background-color: #ffcc00;
+  transition: background 0.25s;
+}
+
+.box li a:hover.instagram {
+  background-color: #ff0088;
+}
+.box li a:hover.whatsapp {
+  background-color: #14dd14;
+}
+.box li a:hover.envelope {
+  background-color: #006eff;
+}
+.box li a:hover.youtube {
+  background-color: #ff0000;
+}
+.box li a:hover .fa {
+  color: #fff;
+  transform: scale(1.5) translateZ(50px);
+}
+.js-tilt-glare {
+  border-radius: 10px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media screen and (max-width: 480px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}

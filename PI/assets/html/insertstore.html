@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/abeia.ico" />
+    <link rel="stylesheet" href="../css/insertstore.css" />
+    <title>Create your Page</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">BeeHive</h1>
+      <nav>
+        <button onclick="window.location.href = '/PI/home.html'">
+          Inicio
+        </button>
+        <button onclick="window.location.href = './contact.html'">Sobre</button>
+        <button onclick="window.location.href = './store.html'">Menu</button>
+        <button onclick="window.location.href = './contact.html'">
+          Contato
+        </button>
+      </nav>
+      <button class="advertise" type="submit" onclick="window.location.href = './insertstore.html'">
+        Anunciar Loja
+      </button>
+    </header>
+    <div class="content">
+      <div class="form">
+        <input type="text" id="name" placeholder="Nome da Loja" />
+        <input type="text" id="categoria" placeholder="Categoria" />
+        <input type="text" id="endereco" placeholder="Endereço" />
+        <textarea
+          id="descricao"
+          cols="30"
+          rows="5"
+          placeholder="Descrição"
+        ></textarea>
+        <input type="text" id="whats" placeholder="WhatsApp" />
+        <input type="text" id="email" placeholder="Email" />
+        <input type="text" id="youtube" placeholder="Youtube channel" />
+      </div>
+      <div class="form">
+        <div id="main"></div>
+        <img src="" alt="" />
+        <label class="file">
+          Choose File
+          <input
+            id="file"
+            class="file"
+            type="file"
+            accept="image/*"
+            class="local"
+            onchange="convert(event)"
+          />
+        </label>
+        <button class="btn" onclick="createCard()">Anunciar</button>
+      </div>
+    </div>
+    <script src="../js/insertstore.js"></script>
+  </body>
+</html>
